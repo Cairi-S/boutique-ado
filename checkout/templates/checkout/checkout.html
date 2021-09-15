@@ -9,9 +9,7 @@
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
-            <div class="col">
-                
-            </div>
+            <div class="col"></div>
         </div>
     </div>
 {% endblock %}
@@ -90,7 +88,7 @@
                         {{ order_form.street_address1 | as_crispy_field }}
                         {{ order_form.street_address2 | as_crispy_field }}
                         {{ order_form.county | as_crispy_field }}
-                        <div class="form-checl form-check-inline float-right mr-0">
+                        <div class="form-check form-check-inline float-right mr-0">
                             {% if user.is_authenticated %}
                                 <label for="id-save-info" class="form-check-label">Save this delivery information to my profile</label>
                                 <input type="checkbox" id="id-save-info" name="save-info" class="form-check-input ml-2 mr-0" checked>
